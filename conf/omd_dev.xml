@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OMD>
+  <root-logger>
+    <name>main</name>
+    <filename>log/omd.log</filename>
+    <format>%Y-%m-%d %H:%M:%S.%f %l %v</format>
+    <debug>true</debug>
+  </root-logger>
+  <loggers>
+    <logger name="omd-1">
+      <filename>log/omd-1.log</filename>
+      <format>%Y-%m-%d %H:%M:%S.%f %l %v</format>
+      <debug>true</debug>
+    </logger>
+    <logger name="omd-2">
+      <filename>log/omd-2.log</filename>
+      <format>%Y-%m-%d %H:%M:%S.%f %l %v</format>
+      <debug>true</debug>
+    </logger>
+  </loggers>
+
+  <channels>
+    <channel name="LLT1" active="true" isRecvOnly="true" nic="127.0.0.1" host="239.1.1.1" port="51000" logger="omd-1"/>
+    <channel name="LLT2" active="true" isRecvOnly="false" nic="127.0.0.1" host="239.1.1.1" port="51000" logger="omd-2"/>
+  </channels>
+</OMD>
+

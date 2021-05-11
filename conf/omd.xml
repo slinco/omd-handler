@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OMD>
+  <root-logger>
+    <name>main</name>
+    <filename>log/omd.log</filename>
+    <format>%Y-%m-%d %H:%M:%S.%f %l %v</format>
+    <debug>true</debug>
+  </root-logger>
+  <loggers>
+    <logger name="channel-30">
+      <filename>log/channel-30.log</filename>
+      <format>%Y-%m-%d %H:%M:%S.%f %l %v</format>
+      <debug>true</debug>
+    </logger>
+    <logger name="channel-31">
+      <filename>log/channel-31.log</filename>
+      <format>%Y-%m-%d %H:%M:%S.%f %l %v</format>
+      <debug>true</debug>
+    </logger>
+    <logger name="channel-32">
+      <filename>log/channel-32.log</filename>
+      <format>%Y-%m-%d %H:%M:%S.%f %l %v</format>
+      <debug>true</debug>
+    </logger>
+    <logger name="channel-33">
+      <filename>log/channel-33.log</filename>
+      <format>%Y-%m-%d %H:%M:%S.%f %l %v</format>
+      <debug>true</debug>
+    </logger>
+    <logger name="channel-34">
+      <filename>log/channel-34.log</filename>
+      <format>%Y-%m-%d %H:%M:%S.%f %l %v</format>
+      <debug>true</debug>
+    </logger>
+  </loggers>
+
+  <channels>
+    <channel name="Channel-30" active="true" isRecvOnly="false" nic="10.121.134.150" host="239.1.1.4" port="51000" logger="channel-30"/>
+    <channel name="Channel-31" active="true" isRecvOnly="false" nic="10.121.134.150" host="239.1.1.4" port="51001" logger="channel-31"/>
+    <channel name="Channel-32" active="true" isRecvOnly="false" nic="10.121.134.150" host="239.1.1.4" port="51002" logger="channel-32"/>
+    <channel name="Channel-33" active="true" isRecvOnly="false" nic="10.121.134.150" host="239.1.1.4" port="51003" logger="channel-33"/>
+    <channel name="Channel-34" active="true" isRecvOnly="false" nic="10.121.134.150" host="239.1.1.4" port="51004" logger="channel-34"/>
+  </channels>
+</OMD>
+
